@@ -1,0 +1,37 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "foundation5-sass": {},
+      "font-awesome": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "foundation5-sass": {
+        "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
+        "tag": "v0.0.11",
+        "commit": "58710f270be7ed4e439ac31a88223c006257c741"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
+      },
+      "scss": {
+        "git": "https://github.com/fourseven/meteor-scss.git",
+        "tag": "v0.7.0",
+        "commit": "39f60d58c2b890bdd897ef52188644f3093fc2ac"
+      },
+      "jquery": {
+        "git": "https://github.com/nrafter/meteor-jquery.git",
+        "tag": "v2.0.31",
+        "commit": "3edf878d51e6f03eff70e1a7a969a19f42b6f1a1"
+      }
+    }
+  }
+}

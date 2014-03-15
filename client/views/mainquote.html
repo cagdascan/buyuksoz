@@ -1,0 +1,36 @@
+<template name="mainQuote">
+	<div id="mainQuote">
+		<div id="mainQuote_buttons">
+		</div>
+		{{#with mainQuote}}
+			<div id="mainQuote_quote">
+				<i class="fa fa-quote-left"></i>
+					{{quote}}
+				<i class="fa fa-quote-right"></i>
+			</div>
+			<div id="mainQuote_portrait">
+				<img src="/img/{{pid}}.jpg">
+			</div>
+			<div id="mainQuote_name">
+				{{author}}
+			</div>
+			{{#if mainPage}}
+				<div id="mainQuote_navigation_main">
+					<i class="fa fa-2x fa-chevron-circle-down"></i>
+				</div>
+			{{else}}
+				<div id="mainQuote_navigation">
+					<div id="mainQuoteNavButton">
+						{{#unless firstQuote}}
+							<i class="fa fa-angle-left"></i>
+						{{/unless}}
+							<span id="mainQuoteNavPage">{{currentQuote}} of {{totalQuote}}</span>
+						{{#unless lastQuote}}
+							<i class="fa fa-angle-right"></i>
+						{{/unless}}	
+					</div>
+				</div>
+			{{/if}}
+		{{/with}}
+	</div>
+</template>

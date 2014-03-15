@@ -1,0 +1,353 @@
+@import "packages/foundation5-sass/foundation";
+
+$mainQuote-color: #fff;
+$mainQuote-portrait-border: #1abc9c;
+$mainQuote-portrait-quotation: #1abc9c;
+$mainQuote-nav-buttons: #1abc9c;
+$quoteNav-bg: #eeeeee;
+$quoteNav-quotes: #8B8B8B;
+$quoteNav-quote: #4E4E4E;
+
+
+@media #{$small-only} { 
+	#mainQuote {
+		#mainQuote_quote {
+			font-size: 22px;
+			padding-top: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
+			i {
+				font-size: 18px;
+			}
+		}
+		#mainQuote_name {
+			margin-top: 18px;
+			font-size: 18px;
+		}
+		#mainQuote_portrait {
+			margin-top: 50px;
+			img {
+				height: 100px;
+			}
+		}
+		#mainQuote_navigation {
+			bottom: 10px;
+			margin-left: -63px;
+			#mainQuoteNavPage {
+				font-size: 12px;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			#mainQuoteNavButton {
+				text-align: center;
+				i.fa-angle-left, .fa-angle-right {
+					font-size: 36px;
+				}
+			}
+		}
+		#mainQuote_buttons {
+			padding-top: 50px;
+			padding-right: 10px;
+		}
+	}
+
+	#quoteNav {
+		padding-top: 20px;
+		.quoteNavTitle {
+			font-size: 18px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		#smallQuoteContainer {
+			.smallQuote {
+				padding-bottom: 6px;
+				&:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10){
+					display: none;
+				}
+			}
+			margin: 2px 10px 2px 10px;
+			.smallQuoteBorder {
+				padding: 10px;
+				height: 100px;
+				.smallQuoteImg {
+					img {
+						-webkit-border-radius: 50%; 
+						-moz-border-radius: 50%; 
+						border-radius: 50%;
+						border: 1px solid $mainQuote-portrait-border;
+						width: auto;	
+					}
+				}
+				.smallQuoteQuote {
+					font-size: 13px;
+				}
+				.smallQuoteAuthor {
+					font-size: 11px;
+					padding-top: 8px;
+				}
+			}
+		}
+	}
+}
+
+@media #{$medium-only} { 
+	#mainQuote {
+		#mainQuote_quote {
+			font-size: 38px;
+			padding-top: 80px;
+			i {
+				font-size: 30px;
+			}
+		}
+		#mainQuote_portrait {
+			margin-top: 50px;
+			img {
+			 height: 150px;	
+			}
+		}
+		#mainQuote_navigation {
+			bottom: 16px;
+			margin-left: -84px;
+			#mainQuoteNavPage {
+				font-size: 16px;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+			#mainQuoteNavButton {
+				text-align: center;
+				i.fa-angle-left, .fa-angle-right {
+					font-size: 48px;
+				}
+			}
+		}
+		#mainQuote_name {
+			margin-top: 30px;
+			font-size: 30px;
+		}
+		#mainQuote_buttons {
+			padding-top: 80px;
+			padding-right: 100px;
+		}
+	}
+	#quoteNav {
+		padding-top: 50px;
+		.quoteNavTitle {
+			font-size: 36px;
+		}
+		#smallQuoteContainer {
+			margin: 50px 80px 0px 80px;
+			.smallQuote {
+				text-align: center;
+				&:last-child {
+					display: none;
+				}
+				.smallQuoteBorder {
+					padding-top: 18px;
+					padding-left: 10px;
+					padding-right: 10px;
+					height: 350px;
+					background-color: #fff;
+					.smallQuoteText {
+						text-align: left;
+						padding-left: 5px;
+						padding-right: 5px;
+						padding-top: 16px;
+						.smallQuoteQuote {
+							font-size: 15px;
+						}
+						.smallQuoteAuthor {
+							font-size: 14px;
+						}
+					}
+					.smallQuoteImg {
+						img {
+							-webkit-border-radius: 50%; 
+							-moz-border-radius: 50%; 
+							border-radius: 50%;
+							border: 1px solid $mainQuote-portrait-border;
+							width: 80px;	
+						}
+					}
+					.smallQuoteAuthor {
+						padding-top: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media #{$large-up} { 
+	#mainQuote {
+		height: 700px;
+		#mainQuote_quote {
+			font-size: 50px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding-top: 80px;
+			i {
+				font-size: 30px;
+			}
+		}
+		#mainQuote_portrait {
+			margin-top: 50px;
+			img {
+			 height: 150px;	
+			}
+		}
+		#mainQuote_navigation {
+			bottom: 24px;
+			margin-left: -102px;
+			#mainQuoteNavPage {
+				font-size: 18px;
+				padding-left: 48px;
+				padding-right: 48px;
+			}
+			#mainQuoteNavButton {
+				text-align: center;
+				i.fa-angle-left, .fa-angle-right {
+					font-size: 54px;
+				}
+			}
+		}
+		#mainQuote_name {
+			margin-top: 30px;
+			font-size: 30px;
+		}
+		#mainQuote_buttons {
+			padding-top: 80px;
+			padding-right: 100px;
+		}
+	}
+	#quoteNav {
+		padding-top: 50px;
+		.quoteNavTitle {
+			font-size: 36px;
+		}
+		#smallQuoteContainer {
+			margin: 50px 100px 0px 100px;
+			.smallQuote {
+				text-align: center;
+			}
+			.smallQuoteBorder {
+				padding: 20px;
+				height: 400px;
+				background-color: #fff;
+				.smallQuoteText {
+					padding-left: 5px;
+					padding-right: 5px;
+					padding-top: 10px;
+					text-align: left;
+				}
+				.smallQuoteQuote {
+					font-size: 14px;
+				}
+				.smallQuoteAuthor {
+					padding-top: 16px;
+					font-size: 12px;
+				}
+				.smallQuoteImg {
+					img {
+						-webkit-border-radius: 50%; 
+						-moz-border-radius: 50%; 
+						border-radius: 50%;
+						border: 2px solid $mainQuote-portrait-border;
+						width: 120px;	
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+body {
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	i.fa-microphone {
+		color: $mainQuote-portrait-border;
+	}
+	.top-bar{
+		opacity: 0.5;
+	}
+	#mainQuote {
+		height: 100%;
+		text-align: center;
+		background: url('img/bg5.jpg');
+		background-size: cover;
+		background-position: center;
+		color: $mainQuote-color;
+		font-weight: 300;
+		letter-spacing: 0.0625em;
+		position: relative;
+		#mainQuote_quote {
+			i {
+				color: $mainQuote-portrait-quotation;
+				&.fa-quote-left {
+					vertical-align: super;
+				}	
+				&.fa-quote-right {
+					vertical-align: sub;
+				}	
+			}
+		}
+		#mainQuote_navigation_main {
+			position: absolute;
+			left: 50%;
+			margin-left: -17px;
+			bottom: 10px;
+		}
+		#mainQuote_navigation {
+			position: absolute;
+			left: 50%;
+			
+			i:hover {
+				cursor: pointer;
+			}
+			#mainQuoteNavPage {
+				vertical-align: super;
+			}
+		}
+
+		#mainQuote_portrait {
+			img {
+				-webkit-border-radius: 50%; 
+				-moz-border-radius: 50%; 
+				border-radius: 50%;
+				border: 2px solid $mainQuote-portrait-border;
+				width: auto;
+			}
+		}
+	}
+}
+
+#quoteNav {
+	background-color: $quoteNav-bg;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	.quoteNavTitle {
+		text-align: center;
+	}
+	#smallQuoteContainer {
+		color: $quoteNav-quotes;
+		.smallQuoteBorder {
+			background-color: #fff;
+			.smallQuoteQuote {
+				color: $quoteNav-quote;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

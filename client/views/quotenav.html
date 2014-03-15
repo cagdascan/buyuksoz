@@ -1,0 +1,23 @@
+<template name="quoteNav">
+	<div id="quoteNav">
+		<div class="quoteNavTitle">Popüler</div>
+		<div id="smallQuoteContainer">
+		  <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-5">
+		  	{{#each quotes}}
+				  <li class="smallQuote">
+				  	<a href="/p/{{pid}}">
+					  	<div class="row smallQuoteBorder">
+				  			<div class="small-3 medium-12 large-12 columns">
+						  		<div class="smallQuoteImg"><img src="/img/{{pid}}.jpg"></div>
+				  			</div>
+				  			<div class="small-9 medium-12 large-12 columns smallQuoteText">
+						  		<div class="smallQuoteQuote">“{{quote}}”</div>
+						  		<div class="smallQuoteAuthor">-&nbsp;{{author}}</div>
+						  	</div>
+					  	</div>
+					  </a>
+				  </li>
+			  {{/each}}
+			</ul>
+	</div>
+</template>
