@@ -1,3 +1,7 @@
+
+
+
+
 Router.map(function () {
 
 	// home route

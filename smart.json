@@ -2,6 +2,7 @@
   "packages": {
     "iron-router": {},
     "foundation5-sass": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "iron-transitioner": {}
   }
 }

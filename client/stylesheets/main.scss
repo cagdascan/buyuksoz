@@ -272,6 +272,9 @@ body {
 	.top-bar{
 		opacity: 0.5;
 	}
+	.transitioner-panes, .current-page {
+		height: 100%;
+	}
 	#mainQuote {
 		height: 100%;
 		text-align: center;
@@ -290,7 +293,8 @@ body {
 				}	
 				&.fa-quote-right {
 					vertical-align: sub;
-				}	
+				}
+					
 			}
 		}
 		#mainQuote_navigation_main {
@@ -298,6 +302,11 @@ body {
 			left: 50%;
 			margin-left: -17px;
 			bottom: 10px;
+			i {
+				&.fa-chevron-circle-down:hover {
+					cursor: pointer;
+				}
+			}
 		}
 		#mainQuote_navigation {
 			position: absolute;

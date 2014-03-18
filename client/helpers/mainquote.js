@@ -41,12 +41,23 @@ Template.mainQuote.helpers({
 		return Quotes.find({'pid': Session.get('author')}).count();
 	}
 });
-
+var nextTransition = 'default';
+Router.transitionType(function() {
+  var nt = nextTransition;
+  nextTransition = 'default';
+  return nt;
+});
 Template.mainQuote.events({
-	'click, tap i.fa-angle-right': function () {
-		Router.go('/p/' + Session.get('author') + '/' + (Session.get('authorQuote') + 1));
+	'click, tap i.fa-chevron-circle-down': function () {
+		$("html, body").animate({ scrollTop: $(window).height()}, "slow");
 	},
-	'click, tap i.fa-angle-left': function () {
-		Router.go('/p/' + Session.get('author') + '/' + (Session.get('authorQuote') - 1));
+	'click i.fa-angle-right': function () {
+		Router.go('/p/' + Session.get('author') + '/' + (Session.get('authorQuote') + 1));
+		console.log('right');
+	},
+	'click i.fa-angle-left': function () {
+		nextTransition = 'back';
+    history.back();
+		console.log('left');
 	}
 });
